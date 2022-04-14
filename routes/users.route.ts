@@ -7,8 +7,10 @@ import {
   updateUser 
 } from '../controllers/users-controllers';
 
+/*
+Path: /api/users
+*/
 const router: Router = Router();
-
 
 router.get( '/', getUsers );
 router.get( '/:id', getUser );
