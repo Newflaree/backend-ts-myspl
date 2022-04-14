@@ -1,6 +1,11 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.nombre = void 0;
-exports.nombre = 'Camilo';
-console.log(exports.nombre);
+const dotenv_1 = __importDefault(require("dotenv"));
+dotenv_1.default.config();
+const server_model_1 = __importDefault(require("./models/server.model"));
+const server = new server_model_1.default();
+server.listen();
 //# sourceMappingURL=app.js.map
